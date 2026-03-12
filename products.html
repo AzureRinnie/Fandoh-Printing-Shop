@@ -1,111 +1,100 @@
-<!--
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Activity 3</title>
-    </head>
-    <body>
-        <table border="1px" width="100%" height="500" style="text-align: center;">
-            <tr height="200px">
-                <td><img src="images/colorless.png" alt="Colorless Bondpaper" width="100%" height="100%"></td>
-                <td><img src="images/colored.png" alt="Colored Bondpaper" width="100%" height="100%"></td>
-                <td><img src="images/photo-poster.png" alt="Photo Poster" width="100%" height="100%"></td>
-            </tr>
-            <tr height="50px">
-                <td>Colorless Bondpaper</td>
-                <td>Colored Bondpaper</td>
-                <td>Photo Poster</td>
-            </tr>
-            <tr height="50px">
-                <td>Php 2.00</td>
-                <td>Php 5.00</td>
-                <td>Php 40.00</td>
-            </tr>
-            <tr height="50px">
-                <td><button>Add to Cart</button></td>
-                <td><button>Add to Cart</button></td>
-                <td><button>Add to Cart</button></td>
-            </tr>
-            <tr height="200px">
-                <td><img src="images/sticker-label.png" alt="Sticker Label" width="100%" height="100%"></td>
-                <td><img src="images/business-card.png" alt="Business Card" width="100%" height="100%"></td>
-                <td><img src="images/volleyball.jpg" alt="Volleyball" width="100%" height="100%"></td>
-            </tr>
-            <tr height="50px">
-                <td>Sticker Label</td>
-                <td>Business Card</td>
-                <td>Volleyball</td>
-            </tr>
-            <tr height="50px">
-                <td>Php 4.00</td>
-                <td>Php 30.00</td>
-                <td>Php 40.00</td>
-            </tr>
-            <tr height="50px">
-                <td><button>Add to Cart</button></td>
-                <td><button>Add to Cart</button></td>
-                <td><button>Add to Cart</button></td>
-            </tr>
-        </table>
-    </body>
-</html>
-
--->
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Products</title>
+        <meta charset="UTF-8">
+        <title>Services & Pricing | Fandoh Printing Shop</title>
         <link rel="stylesheet" href="styleproducts.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Products</h1>
+        <header class="products-header">
+            <h1>Our Printing Services</h1>
+            <p>High-quality solutions for students, professionals, and businesses.</p>
+        </header>
 
         <div class="container">
+            <h2 class="category-title">Document Printing</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <span class="tag">Essential</span>
+                    <h2>Colorless (B&W)</h2>
+                    <img src="images/colorless.png" alt="Black and White Printing">
+                    <div class="desc">Standard 70gsm bondpaper. Crisp text.</div>
+                    <div class="price">₱2.00<span>/page</span></div>
+                    <button class="btn">Order Now</button>
+                </div>
 
-            <div class="product">
-                <h2>Colorless Bondpaper</h2>
-                <img src="images/colorless.png" alt="Colorless Bondpaper">
-                <div class="price">₱2.00</div>
-                <button class="btn">Book Now</button>
+                <div class="product">
+                    <span class="tag">Vibrant</span>
+                    <h2>Colored Print</h2>
+                    <img src="images/colored.png" alt="Colored Document Printing">
+                    <div class="desc">High-ink density for charts and reports.</div>
+                    <div class="price">₱5.00<span>/page</span></div>
+                    <button class="btn">Order Now</button>
+                </div>
+
+                <div class="product">
+                    <h2>Photo Printing</h2>
+                    <img src="images/photo-poster.png" alt="Photo Printing Service">
+                    <div class="desc">Glossy or Matte finish. Best for memories.</div>
+                    <div class="price">₱10.00<span>/up</span></div>
+                    <button class="btn">Order Now</button>
+                </div>
             </div>
 
-            <div class="product">
-                <h2>Colored Bondpaper</h2>
-                <img src="images/colored.png" alt="Colored Bondpaper">
-                <div class="price">₱5.00</div>
-                <button class="btn">Book Now</button>
+            <h2 class="category-title">Marketing & Branding</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <h2>Sticker Labels</h2>
+                    <img src="images/sticker-label.png" alt="Custom Sticker Labels">
+                    <div class="desc">Waterproof vinyl or standard paper stickers.</div>
+                    <div class="price">₱7.00<span>/sheet</span></div>
+                    <button class="btn">Inquire Now</button>
+                </div>
+
+                <div class="product">
+                    <h2>Business Cards</h2>
+                    <img src="images/business-card.png" alt="Professional Business Cards">
+                    <div class="desc">Set of 100. Double-sided available.</div>
+                    <div class="price">₱250.00<span>/box</span></div>
+                    <button class="btn">Order Now</button>
+                </div>
+
+                <div class="product">
+                    <h2>Flyers & Brochures</h2>
+                    <img src="images/flyer.png" alt="Flyer Printing">
+                    <div class="desc">Bulk printing for events and promos.</div>
+                    <div class="price">₱3.00<span>/bulk</span></div>
+                    <button class="btn">Get Quote</button>
+                </div>
             </div>
 
-            <div class="product">
-                <h2>Photo Poster</h2>
-                <img src="images/photo-poster.png" alt="Photo Poster">
-                <div class="price">₱40.00</div>
-                <button class="btn">Buy Now</button>
-            </div>
+            <h2 class="category-title">Finishing & Documents</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <h2>Document Binding</h2>
+                    <img src="images/binding.png" alt="Ring and Soft Bind">
+                    <div class="desc">Comb, Coil, or Soft bind for thesis.</div>
+                    <div class="price">₱50.00<span>/unit</span></div>
+                    <button class="btn">Book Now</button>
+                </div>
 
-            <div class="product">
-                <h2>Sticker Label</h2>
-                <img src="images/sticker-label.png" alt="Sticker Label">
-                <div class="price">₱7.00</div>
-                <button class="btn">Buy Now</button>
-            </div>
+                <div class="product">
+                    <h2>Lamination</h2>
+                    <img src="images/lamination.png" alt="Laminating Service">
+                    <div class="desc">Preserve IDs and important certificates.</div>
+                    <div class="price">₱25.00<span>/page</span></div>
+                    <button class="btn">Order Now</button>
+                </div>
 
-            <div class="product">
-                <h2>Business Card</h2>
-                <img src="images/business-card.png" alt="Business Card">
-                <div class="price">₱30.00</div>
-                <button class="btn">Buy Now</button>
+                <div class="product">
+                    <h2>Rush ID Photos</h2>
+                    <img src="images/id-photo.png" alt="ID Picture Printing">
+                    <div class="desc">1x1, 2x2, or Passport size with editing.</div>
+                    <div class="price">₱45.00<span>/set</span></div>
+                    <button class="btn">Take Photo</button>
+                </div>
             </div>
-
-            <div class="product">
-                <h2>Document Binding</h2>
-                <img src="images/binding.png" alt="Document Binding">
-                <div class="price">₱50.00</div>
-                <button class="btn">Buy Now</button>
-            </div>
-
         </div>
     </body>
 </html>

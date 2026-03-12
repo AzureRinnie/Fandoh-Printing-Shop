@@ -1,66 +1,89 @@
-body {
-    background-color: #f0f2f5; 
+/* --- GLOBAL RESET --- */
+* {
     margin: 0;
-    padding: 20px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header {
+body {
+    background-color: #121212; /* Deep dark background outside the boxes */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+/* --- THE MAIN CONTAINER --- */
+/* Keeps all sections aligned at 80% width */
+.header, #nav, .main, .footer {
     width: 80%;
-    height: 160px; 
-    margin: 0 auto; 
-    border: 2px solid #000;
-    background-color: #ffffff;
-    border-radius: 12px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 12px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* --- HEADER SECTION --- */
+.header {
+    height: 180px;
+    background-color: #000;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid #FF6600; /* Signature Brand Line */
 }
 
 .header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.8s ease;
 }
 
+.header:hover img {
+    transform: scale(1.05); /* Subtle zoom when hovering over the banner */
+}
+
+/* --- NAVIGATION BAR --- */
 #nav {
-    width: 80%;
-    height: 50px; 
-    margin: 15px auto;
-    border: 2px solid #000;
-    background-color: #ffffff;
-    border-radius: 10px;
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(10px); /* Modern frosted glass effect */
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    gap: 40px;
+    margin-bottom: 15px;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
 }
 
 #nav a {
-    font-size: 16px;
-    color: #FF6600; 
-    font-weight: 700;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 8px 16px;
+    border-radius: 6px;
 }
 
 #nav a:hover {
-    color: #000;
-    transform: translateY(-2px); 
+    color: #FF6600;
+    background: rgba(255, 102, 0, 0.1);
 }
 
+/* --- MAIN CONTENT AREA (IFRAME) --- */
 .main {
-    width: 80%;
-    height: 600px; 
-    margin: 0 auto;
-    border: 2px solid #000;
+    height: 75vh; /* Responsive height based on screen size */
     background-color: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    overflow: hidden; /* Keeps iframe corners rounded */
 }
 
 .main iframe {
@@ -69,17 +92,39 @@ body {
     border: none;
 }
 
+/* --- FOOTER SECTION --- */
 .footer {
-    width: 80%;
-    height: 60px;
-    margin: 15px auto 40px auto;
-    border: 2px solid #000;
-    background-color: #000; 
-    color: #ffffff; 
+    margin-top: 15px;
+    height: 80px;
+    background-color: #000;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
+    align-items: center;
+    color: #888;
     font-size: 13px;
-    letter-spacing: 0.5px;
+    border-top: 2px solid #333;
+}
+
+.footer p strong {
+    color: #FF6600;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 1024px) {
+    .header, #nav, .main, .footer {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav {
+        gap: 15px;
+    }
+    #nav a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
 }

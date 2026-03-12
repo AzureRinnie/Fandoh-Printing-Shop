@@ -1,31 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Home</title>
+        <meta charset="UTF-8">
+        <title>Home | Fandoh Printing Shop</title>
         <link rel="stylesheet" href="stylehome.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="home">
-            <h1>WELCOME TO FANDOH'S PRINTING DEN</h1>
-            <p>Premium Quality. Community Trusted. <em>Katuwang sa Bawat Imprenta.</em></p>
+        <div class="home-container">
+            <section class="hero">
+                <h1>WELCOME TO FANDOH'S PRINTING DEN</h1>
+                <p class="tagline">Premium Quality. Community Trusted. <span>Katuwang sa Bawat Imprenta.</span></p>
+                <a href="products.html" class="cta-button">View Our Rates</a>
+            </section>
 
-            <h2>Special Weekly Offer!</h2>
-            <p class="promo">🎁 Get 1 FREE Black & White Print for every 3 pages! Limited time only.</p>
+            <section class="promo-box">
+                <h2>🔥 Special Weekly Offer!</h2>
+                <p>Get <strong>1 FREE</strong> Black & White Print for every 3 pages! Limited time only.</p>
+            </section>
 
-            <h2>Explore Our Specialties</h2>
+            <section class="specialties">
+                <h2>Explore Our Specialties</h2>
+                <div class="product-grid">
+                    <div class="card">
+                        <img src="images/colored.png" alt="Colored Bondpaper">
+                        <h3>High-Res Printing</h3>
+                        <p>Vibrant colors for projects that stand out.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/photo-poster.png" alt="Photo Poster">
+                        <h3>Photo & Posters</h3>
+                        <p>Preserve memories with gallery-grade quality.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/binding.png" alt="Document Binding">
+                        <h3>Pro Binding</h3>
+                        <p>The perfect finish for your thesis or reports.</p>
+                    </div>
+                </div>
+            </section>
 
-            <div class="products">
-                <img src="images/colored.png" alt="Colored Bondpaper">
-                <img src="images/photo-poster.png" alt="Photo Poster">
-                <img src="images/binding.png" alt="Document Binding">
-            </div>
-
-            <h2>The Fandoh Advantage</h2>
-            <div class="reasons">
-                <p>✔ <strong>Suki-Quality:</strong> Every print undergoes a quality check for crispness and color accuracy.</p>
-                <p>✔ <strong>Rapid Turnaround:</strong> We value your time. Reliable service with energy you can count on.</p>
-                <p>✔ <strong>Local Heart:</strong> Proudly serving Cebu with personalized care for every student and business project.</p>
-            </div>
+            <section class="advantage">
+                <h2>The Fandoh Advantage</h2>
+                <div class="features">
+                    <div class="feat-item">
+                        <span class="icon">💎</span>
+                        <div>
+                            <strong>Suki-Quality</strong>
+                            <p>Every print undergoes a quality check for crispness and color accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="feat-item">
+                        <span class="icon">⚡</span>
+                        <div>
+                            <strong>Rapid Turnaround</strong>
+                            <p>We value your time. Reliable service with energy you can count on.</p>
+                        </div>
+                    </div>
+                    <div class="feat-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>Local Heart</strong>
+                            <p>Proudly serving Cebu with personalized care for every project.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="final-cta">
+                <h3>Ready to start your project?</h3>
+                <p>Visit us at Junquera St. or send us a message today!</p>
+                <a href="about.html" class="secondary-btn">Contact Us Now</a>
+            </section>
         </div>
     </body>
 </html>
